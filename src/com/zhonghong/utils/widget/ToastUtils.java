@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.zhonghong.ycsdk.R;
 
 /**
+ * 自定义Toast
  * @author YC
  * @time 2016-10-20 下午4:54:41 
  * TODO:

@@ -7,7 +7,7 @@ import android.os.SystemClock;
 import android.util.Log;
 
 /**
- * 
+ * 打印信息封装
  * @author YC
  * @time 2017-4-7 上午11:32:32
  * TODO:
@@ -77,7 +77,7 @@ private static Map<String, Long> timeRecord = new HashMap<String, Long>();
 	}
 	
 	/**
-	 * 结束打印时间
+	 * 结束时间
 	 * @param tip
 	 */
 	public static void endUseTime(String tip){

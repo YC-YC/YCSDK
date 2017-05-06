@@ -9,6 +9,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 
 /**
+ * 应用信息获取
  * @author YC
  * @time 2017-4-8 上午9:59:39
  * TODO:
@@ -25,6 +26,22 @@ public class AppUtil {
 			PackageManager pm = context.getPackageManager();
 			PackageInfo pInfo = pm.getPackageInfo(context.getPackageName(), PackageManager.GET_CONFIGURATIONS);
 			return pInfo.versionName;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	/**
+	 * 获取应用信息
+	 * @param context
+	 * @return
+	 */
+	public static PackageInfo getPackageInfo(Context context){
+		try {
+			PackageManager pm = context.getPackageManager();
+			PackageInfo pInfo = pm.getPackageInfo(context.getPackageName(), PackageManager.GET_CONFIGURATIONS);
+			return pInfo;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
